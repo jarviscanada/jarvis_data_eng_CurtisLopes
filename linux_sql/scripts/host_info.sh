@@ -20,8 +20,8 @@ cpu_number=$(echo "$lscpu_out" | egrep "^CPU\(s\):" | awk '{print $2}' | xargs)
 cpu_architecture=$(echo "$lscpu_out" | egrep "^\s*Architecture:" | awk '{print $2}' | xargs)
 cpu_model=$(echo "$lscpu_out" | egrep "^\s*Model name:" | cut -d: -f2 | xargs)
 cpu_mhz=$(grep "cpu MHz" /proc/cpuinfo | head -n1 | awk '{print $4}' | xargs)
-l2_cache=$(echo "$lscpu_out" | egrep "L2 cache:" | awk '{print $3}' | xargs)
-total_mem=$(vmstat --unit M | tail -1 | awk '{print $4}')
+l2_cache=$(lscpu | egrep "L2 cache:" | awk '{gsub(/[^0-9.]/, "", $3); print $3 * 1024}' | xargs)
+total_mem=$(vmstat | tail -1 | awk '{print $4}')
 timestamp=$(date "+%Y-%m-%d %H:%M:%S")
 
 #INSERT statement from specification variables

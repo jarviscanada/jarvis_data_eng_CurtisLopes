@@ -42,25 +42,26 @@ The database, `host_data`, consists of two tables; `host_info` and `host_usage`.
 hardware specifications, while `host_usage` stores dynamic performance metrics.
 
 `host_info` stores the following information, all of which is assumed to stay constant:
-- `id`:
-- `hostname`:
-- `cpu_number`:
-- `cpu_architecture`:
-- `cpu_model`:
-- `cpu_mhz`:
-- `l2_cache`:
-- `timestamp`:
-- `total_mem`:
+- `id`: The unique id number which corresponds to a node. Serves as a primary key in 
+the table and is auto-incremented by PostgreSQL
+- `hostname`: Domain name of the node
+- `cpu_number`: Number of CPUs
+- `cpu_architecture`: CPU architecture
+- `cpu_model`: CPU model name
+- `cpu_mhz`: CPU clock speed in MHz
+- `l2_cache`: Size of l2 cache in kB
+- `timestamp`: Time of data collection
+- `total_mem`: Total memory in kB
 
 `host_usage` stores the following information, with information being added every minute by each node
 in order to keep resource usage information up-to-date and to track usage over time:
-- `timestamp`:
-- `host_id`:
-- `memory_free`:
-- `cpu_idle`:
-- `cpu_kernel`:
-- `disk_io`:
-- `disk_available`:
+- `timestamp`: Time of data collection
+- `host_id`: id associated with node in host_info table
+- `memory_free`: Free memory avaialble in MB
+- `cpu_idle`: Percentage of idle CPU
+- `cpu_kernel`: Percentage of CPU time spent in kernel mode
+- `disk_io`: Dick I/O activity (number of write operations)
+- `disk_available`: Available disk space in MB
 
 # Test
 
