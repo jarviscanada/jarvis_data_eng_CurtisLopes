@@ -36,7 +36,7 @@ crontab -e
 
 # Implementation
 ## Architecture
-![Cluster Diagram](./linux_sql/assets/cluster.png)
+![Cluster Diagram](./assets/cluster.png)
 ## Scripts
 - `host_info.sh` is run once by each node in the cluster to gather hardware configuration information about the node
 - `host_usage.sh` is run once every minute by the nodes in the cluster to collect up-to-date information
