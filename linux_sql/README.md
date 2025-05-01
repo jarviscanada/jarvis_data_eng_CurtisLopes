@@ -3,7 +3,7 @@
 # Introduction
 This project implements a lightweight Linux monitoring agent that
 collects hardware specifications and resource usage data from 
-a host machine and stores it in a centralized PostgreSQL database.
+a host machine (node) and stores it in a centralized PostgreSQL database.
 The goal is to enable efficient infrastructure monitoring, providing visibility
 into CPU, memory, and disk activity.
 
@@ -36,7 +36,13 @@ crontab -e
 
 # Implementation
 ## Architecture
+![Cluster Diagram](./linux_sql/assets/cluster.png)
 ## Scripts
+- `host_info.sh` is run once by each node in the cluster to gather hardware configuration information about the node
+- `host_usage.sh` is run once every minute by the nodes in the cluster to collect up-to-date information
+about a given node's usage
+- `ddl.sql` is an SQL file that creates the database and tables in which the data will be stored
+- `psql_docker.sh` is a scripts to start, stop, or create a PostGreSQL Docker container to store the data collected from the nodes in the cluster
 ## Database Modeling
 The database, `host_data`, consists of two tables; `host_info` and `host_usage`. For each server, `host_info` stores static
 hardware specifications, while `host_usage` stores dynamic performance metrics.
