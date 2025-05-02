@@ -37,14 +37,14 @@ crontab -e
 The system follows a client-server architecture where multiple Linux machines (hosts) act as
 data collection agents. Each host runs two Bash scripts: `host_info.sh` (executed once) and `host_usage.sh` (executed every minute via `crontab`).
 These scripts collect hardware specifications and real-time resource usage data, then send it 
-to a central PostgreSQL database hosted in a Docker container. This setup allows for centralized
+to a central PostgreSQL database hosted in a `docker` container. This setup allows for centralized
 monitoring of systems, making it scalable, portable, and easy to deploy.
 ## Scripts
 - `host_info.sh` is run once by each host in the cluster to gather hardware configuration information about the host
 - `host_usage.sh` is run once every minute by the hosts in the cluster to collect up-to-date information
 about a given host's usage
 - `ddl.sql` is an SQL file that creates the database and tables in which the data will be stored
-- `psql_docker.sh` is a script to start, stop, or create a PostGreSQL Docker container to store the data collected from the hosts in the cluster
+- `psql_docker.sh` is a script to start, stop, or create a PostGreSQL `docker` container to store the data collected from the hosts in the cluster
 ## Database Modeling
 The database, `host_data`, consists of two tables; `host_info` and `host_usage`. For each host, `host_info` stores static
 hardware specifications, while `host_usage` stores dynamic performance metrics.
@@ -71,7 +71,7 @@ in order to keep resource usage information up-to-date and to track usage over t
 - `disk_io`: Dick I/O activity (number of write operations)
 - `disk_available`: Available disk space in MB
 # Test
-The scripts were tested in a local Docker container environment. `host_info.sh` was run once to insert hardware data
+The scripts were tested in a local `docker` container environment. `host_info.sh` was run once to insert hardware data
 and verified using SQL queries on the `host_info` table in the `host_agent` database. Once confirmed to be running correctly,
 `host_usage.sh` was tested using `crontab` to ensure new usage data is appended every minute.
 We verified usage data by running SQL queries on the `host_usage` table in the `host_agent` database.
