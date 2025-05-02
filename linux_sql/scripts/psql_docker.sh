@@ -6,11 +6,10 @@ db_username=$2
 db_password=$3
 
 # Start docker
-# Make sure you understand the double pipe operator
 # If docker isn't running, start it
 sudo systemctl status docker || sudo systemctl start docker
 
-# Check container status (try the following cmds on terminal)
+# Check container status
 docker container inspect jrvs-psql
 container_status=$?
 
