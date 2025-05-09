@@ -1,19 +1,19 @@
 # Introduction
-This project implements a relational database system for managing a sport club's facilities,
-members, and bookings using PostgreSQL. The design focuses on structured data representation,
+This project implements a relational database system for managing a sports club's facilities,
+members, and bookings using PostgreSQL. The design uses structured data representation,
 schema normalization, and query-based access patterns to simulate real-world club operations.
 Users of this system may include club administrators, and technical teams responsible for managing
 membership, facility usage, and historical data.
 
 The database is containerized using `docker` to ensure a consistent and portable development 
-environment. PostgreSQL is used as the primary database engine, allowing for realistic SQL
-queries and DDL/DML operations. Bash scripts are used to automate database setup, while `git` was used for
+environment. PostgreSQL is the primary database engine, allowing for realistic SQL
+queries and DDL/DML operations. SQL scripts are used to automate database setup, while `git` was used for
 version control throughout the development process.
 
 The project emphasizes schema design, SQL proficiency, and working with containerized databases in a 
-Linux environment. It uses `psql` for interaction with the PostgreSQL database and leverage SQL scripts (`.sql` files)
-to initialize and load structured data. The project demonstrates how to set up, populate, and query a relational
-database in a reproducible, dockerized environment with real-world utility.
+Linux environment. SQL scripts (`.sql` files) are used to initialize and load structured data, while
+`psql` queries are used to interact with the database.  The project demonstrates how to set up, populate, 
+and query a relational database in a reproducible, dockerized environment with real-world utility.
 
 # Architecture & Design
 ![Entity Relationship Diagram](./assets/rdbms.drawio.png)
