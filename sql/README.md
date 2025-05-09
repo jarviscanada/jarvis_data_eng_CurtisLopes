@@ -1,5 +1,35 @@
 # Introduction
+This project implements a relational database system for managing a sport club's facilities,
+members, and bookings using PostgreSQL. The design focuses on structured data representation,
+schema normalization, and query-based access patterns to simulate real-world club operations.
+Users of this system may include club administrators, and technical teams responsible for managing
+membership, facility usage, and historical data.
 
+The database is containerized using `docker` to ensure a consistent and portable development 
+environment. PostgreSQL is used as the primary database engine, allowing for realistic SQL
+queries and DDL/DML operations. Bash scripts are used to automate database setup, while `git` was used for
+version control throughout the development process.
+
+The project emphasizes schema design, SQL proficiency, and working with containerized databases in a 
+Linux environment. It uses `psql` for interaction with the PostgreSQL database and leverage SQL scripts (`.sql` files)
+to initialize and load structured data. The project demonstrates how to set up, populate, and query a relational
+database in a reproducible, dockerized environment with real-world utility.
+
+# Architecture & Design
+![Entity Relationship Diagram](./assets/rdbms.drawio.png)
+As described by the ERD above, the database consists of three tables; `cd.members`, `cd.bookings`, and `cd.facilities`.
+`cd.bookings` uses the foreign keys `facid` and `memid`, the primary keys of `cd.facilites` and `cd.members`, respectively.
+
+## Script Descriptions
+- `cubdata.sql` contains all initial information for the tables. Running the file initializes the database,
+creates all tables, and populates the tables with data.
+- `queries.sql` contains queries used to test and traverse the database. All queries in this file are below under the 
+"SQL Queries" header.
+# Improvements
+1. Add a Web Interface: Implementing a web application would allow users to interact with the database via a 
+GUI rather than through the terminal.
+2. Automate Initialization Scripts: Using `bash` scripts to initialize the database and data would accelerate
+the setup process.
 # SQL Queries
 
 ###### Table Setup (DDL)
