@@ -57,7 +57,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_CurtisLope
 
 
 ## Miscellaneous
-- Udacity Machine Learning (2019)
+- Udacity SQL for Data Analysis (2020)
 - Winner
 - Basketball player
 - Competitive gaming
