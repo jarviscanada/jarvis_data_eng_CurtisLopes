@@ -1,59 +1,59 @@
 # Curtis Lopes . Jarvis Consulting
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit.
+Versatile software developer with a strong academic foundation in Computer Science, bringing hands-on experience in full-stack development and project collaboration across academic and professional settings. With a background that bridges technical education and real-world application, I bring a strong understanding of building maintainable, scalable, high-quality software. I'm driven by the rapid pace of innovation in the software industry - particularly in AI and cloud development - which consistently challenge me to grow and adapt. I'm passionate about creating solutions that are not only technically sound but also impactful, and I'm excited to contribute to teams where continuous learning and cutting-edge technology come together.
 
 ## Skills
 
-**Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
+**Proficient:** Java, Python, SQL, Linux/Bash, Javascript
 
-**Competent:** Donec, fermentum, Donec, fermentum, Donec
+**Competent:** C++, C#, C, Azure, Selenium
 
-**Familiar:** Donec, fermentum, fermentum, fermentum, fermentum
+**Familiar:** MongoDB, REST APIs, .NET MAUI, Azure, JUnit
 
 ## Jarvis Projects
 
-Project source code: [https://github.com/jarviscanada/jarvis_data_eng_demo](https://github.com/jarviscanada/jarvis_data_eng_demo)
+Project source code: [https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/linux_sql)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/linux_sql)]: Developed a lightweight monitoring agent that uses Bash scripts to collect hardware specs and real-time resource usage from Linux hosts, storing the data in a centralized PostgreSQL database. Leverage tools such as psql, docker, and crontab to automate data collection and ensure reliable scheduling. Emphasized modular scripting practices and relational database design to support scalable infrastructure monitoring for system administrators and DevOps teams.
 
-**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/core_java)]:
+**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/core_java)]:
       
   - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
   - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
   - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
 
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/springboot)]: Not Started
+**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/springboot)]: Not Started
 
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/python_data_anlytics)]: Not Started
+**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/python_data_anlytics)]: Not Started
 
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/hadoop)]: Not Started
+**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/hadoop)]: Not Started
 
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/spark)]: Not Started
+**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/spark)]: Not Started
 
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_demo/tree/master/cloud_devops)]: Not Started
+**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/cloud_devops)]: Not Started
 
 
 ## Highlighted Projects
-**Web app for resturant** [[GitHub](https://github.com/jarviscanada/jarvis_profile_builder)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Fitness Club Management System**: Developed a Fitness Club Management System using Python for the application interface and SQL for backend data management. Implemented key features including user registration, fitness tracking, room bookings, and billing. Collaborated with team members using Git for version control, managing branches, merges, and code reviews to maintain high-quality, consistent code. The project emphasized modular design, database integration, and teamwork throughout the development process.
 
-**Machine Learning**: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Weather App**: Built a cross-platform weather app using .NET MAUI with C# and Xamarin.Forms, integrating the WeatherStack API to display real-time weather data. Developed and tested the application within Visual Studio using an Android emulator. Used GitHub for version control and managing code changes throughout the development process. The project demonstrates proficiency in mobile UI design, API integration, and cross-platform development using .NET framework.
 
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2020-present)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Software Developer, Jarvis (2025-present)**: Collaborated with a team of developers to complete sprint-based projects assigned by our Scrum Master, following Agile methodologies throughout the development cycle. Projects varied each sprint, offering hands-on experience in adapting to different technical challenges and contributing to all phases of the development process. Utilized a range of tools and technologies including Bash scripting and Git to build and maintain software solutions.
 
-**Tutor, XYZ Company (2019)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Accounting Associate, Bench Accounting (2021-2022)**: Supported a portfolio of 45 U.S. companies by analyzing and reconciling financial statements and business reports to deliver accurate financial summaries. Collaborated directly with business owners to improve accounting practices and ensure proper reporting to the IRS. Leveraged data visualization tools such as Tableau, Google Sheets, and Excel to monitor client progress and team performance, enabling data-driven goal setting and improved operational transparency.
 
 
 ## Education
-**XYZ university (2012-2016)**, Bachelor of Applied Sciences, Electrical and Computer Engineering
+**Carleton University (2022-2024)**, Bachelor of Computer Science (Honours), School of Computer Science
 - Scholarship
 - Dean's List (2015, 2016): Ut enim ad minim veniam
 - GPA: 3.8/4.0
 
-**XYZ university (2016-2018)**, Master of Engineering, Electrical and Computer Engineering
+**Queen's University (2014-2019)**, Bachelor of Arts (Honours), Applied Economics
 
 
 ## Miscellaneous
