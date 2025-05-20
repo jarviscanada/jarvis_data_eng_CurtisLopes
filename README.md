@@ -6,7 +6,7 @@ Versatile software developer with a strong academic foundation in Computer Scien
 
 **Proficient:** Java, Python, SQL, Linux/Bash, Javascript
 
-**Competent:** C++, C#, C, Azure, Selenium
+**Competent:** C++, C#, C, GCP, AWS, Selenium
 
 **Familiar:** MongoDB, REST APIs, .NET MAUI, Azure, JUnit
 
@@ -16,22 +16,6 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_CurtisLope
 
 
 **Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/linux_sql)]: Developed a lightweight monitoring agent that uses Bash scripts to collect hardware specs and real-time resource usage from Linux hosts, storing the data in a centralized PostgreSQL database. Leverage tools such as psql, docker, and crontab to automate data collection and ensure reliable scheduling. Emphasized modular scripting practices and relational database design to support scalable infrastructure monitoring for system administrators and DevOps teams.
-
-**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/core_java)]:
-      
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/springboot)]: Not Started
-
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/python_data_anlytics)]: Not Started
-
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/hadoop)]: Not Started
-
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/spark)]: Not Started
-
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/cloud_devops)]: Not Started
 
 
 ## Highlighted Projects
@@ -49,16 +33,11 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_CurtisLope
 
 ## Education
 **Carleton University (2022-2024)**, Bachelor of Computer Science (Honours), School of Computer Science
-- Scholarship
-- Dean's List (2015, 2016): Ut enim ad minim veniam
-- GPA: 3.8/4.0
 
 **Queen's University (2014-2019)**, Bachelor of Arts (Honours), Applied Economics
 
 
 ## Miscellaneous
 - Udacity SQL for Data Analysis (2020)
-- Winner
-- Basketball player
-- Competitive gaming
-- Volunteer, ABC Food bank: Ut enim ad minim veniam
+- Soccer player
+- Golfer

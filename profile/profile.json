@@ -1,11 +1,7 @@
 {
   "education": [
     {
-      "awards_achievements": [
-        "Scholarship",
-        "Dean's List (2015, 2016): Ut enim ad minim veniam",
-        "GPA: 3.8/4.0"
-      ],
+      "awards_achievements": null,
       "degree": "Bachelor of Computer Science (Honours)",
       "department": "School of Computer Science",
       "duration": "2022-2024",
@@ -37,40 +33,6 @@
       "description": "Developed a lightweight monitoring agent that uses Bash scripts to collect hardware specs and real-time resource usage from Linux hosts, storing the data in a centralized PostgreSQL database. Leverage tools such as psql, docker, and crontab to automate data collection and ensure reliable scheduling. Emphasized modular scripting practices and relational database design to support scalable infrastructure monitoring for system administrators and DevOps teams.",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
-    },
-    {
-      "description": [
-        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
-      ],
-      "git_url": "/core_java",
-      "name": "Core Java Apps"
-    },
-    {
-      "description": "",
-      "git_url": "/springboot",
-      "name": "Springboot App"
-    },
-    {
-      "description": "",
-      "git_url": "/python_data_anlytics",
-      "name": "Python Data Analytics"
-    },
-    {
-      "description": "",
-      "git_url": "/hadoop",
-      "name": "Hadoop"
-    },
-    {
-      "description": "",
-      "git_url": "/spark",
-      "name": "Spark"
-    },
-    {
-      "description": "",
-      "git_url": "/cloud_devops",
-      "name": "Cloud/DevOps"
     }
   ],
   "name": "Curtis Lopes",
@@ -83,15 +45,13 @@
     },
     {
       "bullets": [
-        "Winner"
+        "Soccer player"
       ],
       "title": "Awards"
     },
     {
       "bullets": [
-        "Basketball player",
-        "Competitive gaming",
-        "Volunteer, ABC Food bank: Ut enim ad minim veniam"
+        "Golfer"
       ],
       "title": "Activities/Hobbies"
     }
@@ -115,7 +75,8 @@
       "C++",
       "C#",
       "C",
-      "Azure",
+      "GCP",
+      "AWS",
       "Selenium"
     ],
     "familiar": [
