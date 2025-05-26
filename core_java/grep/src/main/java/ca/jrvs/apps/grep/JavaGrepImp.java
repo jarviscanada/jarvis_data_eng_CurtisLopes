@@ -6,8 +6,11 @@ import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.io.IOException;
+
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.regex.Pattern;
 
@@ -41,7 +44,6 @@ public class JavaGrepImp implements JavaGrep{
     @Override
     public void process() throws IOException {
         List<String> matchedLines = new ArrayList<>();
-        Pattern pattern = Pattern.compile(getRegex());
 
         for (File file : listFiles(getRootPath())) {
             for (String line : readLines(file)) {
@@ -77,22 +79,49 @@ public class JavaGrepImp implements JavaGrep{
 
     @Override
     public List<String> readLines(File inputFile) throws IllegalArgumentException {
-        return Collections.emptyList();
+        if (!inputFile.isFile()) throw new IllegalArgumentException("Not a valid file: " + inputFile);
+
+        List<String> lines = new ArrayList<>();
+
+        try (BufferedReader reader = new BufferedReader(
+                new InputStreamReader(Files.newInputStream(inputFile.toPath()), StandardCharsets.UTF_8))) {
+
+            String line;
+            while ((line = reader.readLine()) != null) {
+                lines.add(line);
+            }
+        } catch (IOException e) {
+            logger.error("Failed to read file: " + inputFile, e);
+        }
+
+        return lines;
     }
 
     @Override
     public boolean containsPattern(String line) {
-        return false;
+        Pattern pattern = Pattern.compile(getRegex());
+        return pattern.matcher(line).find();
     }
 
     @Override
     public void writeToFile(List<String> lines) throws IOException {
 
+        try (BufferedWriter writer = new BufferedWriter(
+                new OutputStreamWriter(Files.newOutputStream(Paths.get(getOutFile())), StandardCharsets.UTF_8))) {
+
+            for (String line : lines) {
+                writer.write(line);
+                writer.newLine();
+            }
+        } catch (IOException e) {
+            logger.error("Failed to write output file: " + outFile, e);
+            throw e;
+        }
     }
 
     @Override
     public String getRootPath() {
-        return rootPath;
+        return this.rootPath;
     }
 
     @Override
@@ -102,7 +131,7 @@ public class JavaGrepImp implements JavaGrep{
 
     @Override
     public String getRegex() {
-        return regex;
+        return this.regex;
     }
 
     @Override
@@ -112,7 +141,7 @@ public class JavaGrepImp implements JavaGrep{
 
     @Override
     public String getOutFile() {
-        return outFile;
+        return this.outFile;
     }
 
     @Override
