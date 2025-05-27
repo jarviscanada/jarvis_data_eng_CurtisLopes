@@ -61,7 +61,9 @@ public class JavaGrepImp implements JavaGrep{
         List<File> files = new ArrayList<>();
         File dir = new File(rootDir);
 
-        if(!dir.isDirectory()) throw new IllegalArgumentException("Not a directory: " + rootDir);
+        if(!dir.isDirectory()) {
+            throw new IllegalArgumentException("Not a directory");
+        }
 
         File[] fileList = dir.listFiles();
         if(fileList != null) {
@@ -78,8 +80,10 @@ public class JavaGrepImp implements JavaGrep{
     }
 
     @Override
-    public List<String> readLines(File inputFile) throws IllegalArgumentException {
-        if (!inputFile.isFile()) throw new IllegalArgumentException("Not a valid file: " + inputFile);
+    public List<String> readLines(File inputFile) {
+        if (!inputFile.isFile()) {
+            throw new IllegalArgumentException("Not a file");
+        }
 
         List<String> lines = new ArrayList<>();
 
