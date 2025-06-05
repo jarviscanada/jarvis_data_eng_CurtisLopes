@@ -1,8 +1,8 @@
 # Grep App
 ## Introduction
-The Grep App is a command-line Java application that searches through
-a given directory's files for lines that match a given regular expression. The application
-supports two implementations: a traditional approach using `for` loops, and a 
+The Grep App is a command-line Java application that recursively searches through
+a given directory's files for lines that match a given regular expression, and writes
+the matched lines to the given output file. The application supports two implementations: a traditional approach using `for` loops, and a 
 modern lambda/stream-based approach. The project is configured with Maven
 for building and managing dependencies, and implements Java Streams and Lambda expressions (in the lambda implementation).
 The application is packaged using Docker for easy distribution. Development and testing were completed
@@ -39,12 +39,12 @@ Write all matched lines to the output file
 ```
 
 ## Performance Issue
-The application reads all files into memory before writing matching lines into
-to a file. This may lead to issues when processing very large
-files or directories, resulting in an `OutOfMemoryError`. A potential solution to 
-this issue would be to adjust the process to implement a streaming write so the app 
-processes line and writes matches as they are found, thus avoiding storing the entirety
-of a file in memory.
+The traditional implementation of the application that uses `for` loops reads all files into memory
+before writing matching lines to the output file. This approach can lead to memory issues - such as `OutOfMemoryError` - 
+when dealing with very large files or directories. The lambda-based implementation improves performance
+by utilizing Java Streams, which offer lazy evaluation and more efficient memory usage. While the implementation 
+still collects matching lines before writing, the use of stream operations significantly reduces
+the memory footprint during file traversal and line filtering.
 # Test
 The app was tested manually:
 - Sample datasets  were added to the `data/` directory with matching and non-matching lines
@@ -62,5 +62,5 @@ docker push your_dockerhub_username/grep
 ```
 # Improvement
 1. Use JUnit to automate testing
-2. Implement a streaming write to improve performance and minimize potential issues
+2. Implement a streaming write to improve performance
 3. Add support for additional input formats (e.g. JSON, CSV) and output options (e.g. database)
