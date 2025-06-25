@@ -15,7 +15,7 @@
       "school_name": "Queen's University"
     }
   ],
-  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes",
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/develop",
   "highlighted_projects": [
     {
       "description": "Developed a Fitness Club Management System using Python for the application interface and SQL for backend data management. Implemented key features including user registration, fitness tracking, room bookings, and billing. Conducted regular code reviews with team members to maintain high-quality, consistent code. The project emphasized modular design, database integration, and teamwork throughout the development process.",
@@ -85,14 +85,18 @@
       "C++",
       "C#",
       "C",
+      "Docker",
+      "REST APIs",
       "GCP",
-      "AWS",
-      "Selenium"
+      "Selenium",
+      "Node.js",
+      "Pandas/Numpy"
     ],
     "familiar": [
       "MongoDB",
-      "REST APIs",
       ".NET MAUI",
+      "React",
+      "AWS",
       "Azure",
       "JUnit"
     ],
@@ -101,8 +105,10 @@
       "Python",
       "SQL",
       "Linux/Bash",
-      "Javascript"
+      "Javascript",
+      "Agile/Scrum",
+      "Git"
     ]
   },
-  "summary": "Versatile software developer with a strong academic foundation in Computer Science, bringing hands-on experience in full-stack development and project collaboration across academic and professional settings. With a background that bridges technical education and real-world application, I bring a strong understanding of building maintainable, scalable, high-quality software. I'm driven by the rapid pace of innovation in the software industry - particularly in AI and cloud development - which consistently challenge me to grow and adapt. I'm passionate about creating solutions that are not only technically sound but also impactful, and I'm excited to contribute to teams where continuous learning and cutting-edge technology come together."
+  "summary": "Versatile software developer with a strong academic foundation in Computer Science and hands-on experience in full-stack development and collaborative projects across both academic and professional settings. With a background that bridges technical education and real-world application, I bring a comprehensive understanding of building maintainable, scalable, high-quality software. In my professional career I have built and deployed scalable solutions using Python, Java, SQL, and Docker, and have expanded my capabilities through personal projects using C#, React, AWS and Azure. I'm driven by the rapid pace of innovation in the software industry - particularly in AI and cloud development - which continually challenge me to grow and adapt. I'm passionate about creating solutions that are not only technically sound but also impactful, and I'm excited to contribute to teams where continuous learning and cutting-edge technology come together."
 }
