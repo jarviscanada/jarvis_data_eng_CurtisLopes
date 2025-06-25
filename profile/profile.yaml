@@ -1,15 +1,16 @@
 # Preferred name (Characters only)
 name: "Curtis Lopes"
 # Your GitHub repo root URL
-github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/develop
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: Versatile software developer with a strong academic foundation in Computer Science, bringing hands-on experience
-  in full-stack development and project collaboration across academic and professional settings. With a background 
-  that bridges technical education and real-world application, I bring a strong understanding of building maintainable, 
-  scalable, high-quality software. I'm driven by the rapid pace of innovation in the software industry - particularly 
-  in AI and cloud development - which consistently challenge me to grow and adapt. I'm passionate about 
+summary: Versatile software developer with a strong academic foundation in Computer Science and hands-on experience
+  in full-stack development and collaborative projects across both academic and professional settings. With a background 
+  that bridges technical education and real-world application, I bring a comprehensive understanding of building maintainable, 
+  scalable, high-quality software. In my professional career I have built and deployed scalable solutions using Python, Java, SQL, and Docker,
+  and have expanded my capabilities through personal projects using C#, React, AWS and Azure. I'm driven by the rapid pace of innovation 
+  in the software industry - particularly in AI and cloud development - which continually challenge me to grow and adapt. I'm passionate about 
   creating solutions that are not only technically sound but also impactful, and I'm excited to contribute to teams 
   where continuous learning and cutting-edge technology come together.
 
@@ -23,19 +24,25 @@ skills:
     - SQL
     - Linux/Bash
     - Javascript
+    - Agile/Scrum
+    - Git
   # At least 5 skills
   competent:
     - C++
     - C#
     - C
+    - Docker
+    - REST APIs
     - GCP
-    - AWS
     - Selenium
+    - Node.js
+    - Pandas/Numpy
   # At least 5 skills
   familiar:
     - MongoDB
-    - REST APIs
     - .NET MAUI
+    - React
+    - AWS
     - Azure
     - JUnit
 

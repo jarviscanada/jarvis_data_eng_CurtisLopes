@@ -1,25 +1,25 @@
 # Curtis Lopes . Jarvis Consulting
 
-Versatile software developer with a strong academic foundation in Computer Science, bringing hands-on experience in full-stack development and project collaboration across academic and professional settings. With a background that bridges technical education and real-world application, I bring a strong understanding of building maintainable, scalable, high-quality software. I'm driven by the rapid pace of innovation in the software industry - particularly in AI and cloud development - which consistently challenge me to grow and adapt. I'm passionate about creating solutions that are not only technically sound but also impactful, and I'm excited to contribute to teams where continuous learning and cutting-edge technology come together.
+Versatile software developer with a strong academic foundation in Computer Science and hands-on experience in full-stack development and collaborative projects across both academic and professional settings. With a background that bridges technical education and real-world application, I bring a comprehensive understanding of building maintainable, scalable, high-quality software. In my professional career I have built and deployed scalable solutions using Python, Java, SQL, and Docker, and have expanded my capabilities through personal projects using C#, React, AWS and Azure. I'm driven by the rapid pace of innovation in the software industry - particularly in AI and cloud development - which continually challenge me to grow and adapt. I'm passionate about creating solutions that are not only technically sound but also impactful, and I'm excited to contribute to teams where continuous learning and cutting-edge technology come together.
 
 ## Skills
 
-**Proficient:** Java, Python, SQL, Linux/Bash, Javascript
+**Proficient:** Java, Python, SQL, Linux/Bash, Javascript, Agile/Scrum, Git
 
-**Competent:** C++, C#, C, GCP, AWS, Selenium
+**Competent:** C++, C#, C, Docker, REST APIs, GCP, Selenium, Node.js, Pandas/Numpy
 
-**Familiar:** MongoDB, REST APIs, .NET MAUI, Azure, JUnit
+**Familiar:** MongoDB, .NET MAUI, React, AWS, Azure, JUnit
 
 ## Jarvis Projects
 
-Project source code: [https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes)
+Project source code: [https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/develop](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/develop)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/linux_sql)]: Developed a lightweight monitoring agent that uses Bash scripts to collect hardware specs and real-time resource usage from Linux hosts, storing the data in a centralized PostgreSQL database. Leverage tools such as psql, docker, and crontab to automate data collection and ensure reliable scheduling. Emphasized modular scripting practices and relational database design to support scalable infrastructure monitoring for system administrators and DevOps teams.
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/develop/tree/master/linux_sql)]: Developed a lightweight monitoring agent that uses Bash scripts to collect hardware specs and real-time resource usage from Linux hosts, storing the data in a centralized PostgreSQL database. Leverage tools such as psql, docker, and crontab to automate data collection and ensure reliable scheduling. Emphasized modular scripting practices and relational database design to support scalable infrastructure monitoring for system administrators and DevOps teams.
 
-**Grep App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/grep_app)]: Developed a Java-based Grep application - a command-line tool that recursively searches files in a directory for lines matching a given regular expression and writes results to an output file. Implemented both traditional (loop-based) and modern (Java Streams & Lambda) approaches. Built with Maven, logged with SL4FJ, and packaged using Docker for easy deployment. The application can be used for log analysis, automated file scanning, or integration into data-processing pipelines for DevOps and system monitoring tasks.
+**Grep App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/develop/tree/master/grep_app)]: Developed a Java-based Grep application - a command-line tool that recursively searches files in a directory for lines matching a given regular expression and writes results to an output file. Implemented both traditional (loop-based) and modern (Java Streams & Lambda) approaches. Built with Maven, logged with SL4FJ, and packaged using Docker for easy deployment. The application can be used for log analysis, automated file scanning, or integration into data-processing pipelines for DevOps and system monitoring tasks.
 
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/python_data_anlytics)]: Developed a proof-of-concept analytics project for a UK-based online retailer using Python, PostgreSQL, Docker, and Jupyter Notebook. Leveraged Pandas, Matplotlib, and Seaborn to analyze historical purchase data and visualize customer behaviour. Built an RFM (Recency, Frequency, Monetary) model to segment customers and uncover insights for targeted marketing strategies. Deployed the project via GitHub and Jupyter Notebook to provide the LGS team with accessible analytics, allowing them to identify high-value customers, lapsed buyers for potential re-engagement, and improve overall sales performance.
+**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/develop/tree/master/python_data_anlytics)]: Developed a proof-of-concept analytics project for a UK-based online retailer using Python, PostgreSQL, Docker, and Jupyter Notebook. Leveraged Pandas, Matplotlib, and Seaborn to analyze historical purchase data and visualize customer behaviour. Built an RFM (Recency, Frequency, Monetary) model to segment customers and uncover insights for targeted marketing strategies. Deployed the project via GitHub and Jupyter Notebook to provide the LGS team with accessible analytics, allowing them to identify high-value customers, lapsed buyers for potential re-engagement, and improve overall sales performance.
 
 
 ## Highlighted Projects
