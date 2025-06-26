@@ -15,7 +15,7 @@
       "school_name": "Queen's University"
     }
   ],
-  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/develop",
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes",
   "highlighted_projects": [
     {
       "description": "Developed a Fitness Club Management System using Python for the application interface and SQL for backend data management. Implemented key features including user registration, fitness tracking, room bookings, and billing. Conducted regular code reviews with team members to maintain high-quality, consistent code. The project emphasized modular design, database integration, and teamwork throughout the development process.",
