@@ -2,10 +2,11 @@ import React from 'react';
 import { Table } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt as deleteIcon } from '@fortawesome/free-solid-svg-icons';
+import { useState, useEffect } from 'react';
+import TraderListData from './TraderListData.json';
+
 import 'antd/dist/antd.css';
 import './TraderList.scss';
-import { useState, useEffect } from 'react';
-import TRaderListData from './TraderListData.json';
 
 function TraderList(props) {
 
@@ -52,17 +53,17 @@ function TraderList(props) {
     const [dataSource, setDataSource] = useState([])
 
     useEffect(() => {
-        const dataSource = TRaderListData
+        const dataSource = TraderListData
         setDataSource(dataSource)
-    })
+    }, []);
 
     return (
         <Table
-        dataSource={dataSource}
+        dataSource={ props.traders }
         columns={tableColumns}
         pagination={false}
         />
-    )
+    );
 }
 
 export default TraderList

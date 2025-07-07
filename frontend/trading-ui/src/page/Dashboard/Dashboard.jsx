@@ -5,7 +5,7 @@ import TraderList from '../../component/TraderList/TraderList'
 import TraderListData from '../../component/TraderList/TraderListData.json'
 import { Input, DatePicker, Modal, Button, Form } from 'antd'
 import axios from 'axios'
-import {createTradeUrl, deleteTraderUrl, tradersUrl } from '../../util/constants'
+import {createTraderUrl, deleteTraderUrl, tradersUrl } from '../../util/constants'
 import "antd/dist/antd.min.css"
 import { useEffect, useState } from 'react'
 
@@ -16,11 +16,14 @@ function Dashboard(props) {
         traders: []
     })
 
-    const getTraders = () => {
-        setState({
-            ...state,
-            traders: [...TraderListData]
-        })
+    const getTraders = async () => {
+        const response = await axios.get(tradersUrl);
+        if (response) {
+            setState({
+                ...state,
+                traders: [...TraderListData]
+            })
+        }
     }
 
     const showModal = () => {
@@ -28,20 +31,6 @@ function Dashboard(props) {
             ...state,
             isModalVisible: true
         })
-    }
-
-    const handleOk = async () => {
-        await getTraders();
-
-        setState({
-            ...state,
-            isModalVisible: false,
-            firstName: null,
-            lastName: null,
-            dob: null,
-            country: null,
-            email: null
-        });
     }
 
     const onInputChange = (field, value) => {
@@ -62,9 +51,32 @@ function Dashboard(props) {
         getTraders()
     }, [])
 
+    //Create a Trader
+    const handleOk = async () => {
+        const paramUrl = `/firstname/${state.firstName}/lastname/${state.lastName}/dob/${state.dob}/country/${state.country}/email/${state.email}`; 
+        const response = await axios.post(createTraderUrl + paramUrl, {});
+
+        // Refresh traders list
+        await getTraders();
+        setState({
+            ...state,
+            isModalVisible: false,
+            firstName: null,
+            lastName: null,
+            dob: null,
+            country: null,
+            email: null
+        });
+    };
+
+    //Delete a Trader
     const onTraderDelete = async (id) => {
-        console.log("Trader " + id + " is deleted.");
-        await getTraders()
+
+        const paramUrl = "/" + id;
+        const response = await axios.delete(deleteTraderUrl + paramUrl);
+
+        await getTraders();
+        console.log(`Trader ${id} deleted.`);
     }
 
     return (
@@ -110,7 +122,7 @@ function Dashboard(props) {
                             </Modal>
                         </div>
                     </div>
-                <TraderList onTraderDeleteClick={onTraderDelete} />
+                <TraderList onTraderDeleteClick={onTraderDelete} traders={ state.traders } />
             </div>
         </div>
     )
