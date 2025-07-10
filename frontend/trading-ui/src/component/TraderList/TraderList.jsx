@@ -2,8 +2,6 @@ import React from 'react';
 import { Table } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt as deleteIcon } from '@fortawesome/free-solid-svg-icons';
-import { useState, useEffect } from 'react';
-import TraderListData from './TraderListData.json';
 
 import 'antd/dist/antd.css';
 import './TraderList.scss';
@@ -43,27 +41,24 @@ function TraderList(props) {
             key: 'actions',
             render: (text, record) => (
                 <div className="trader-delete-con">
-                    <FontAwesomeIcon icon={ deleteIcon } onClick={() => props.onTraderDeleteClick(record.id) } />
+                    <FontAwesomeIcon 
+                    icon={ deleteIcon } 
+                    onClick={() => props.onTraderDeleteClick(record.id) } 
+                    style={{ cursor: 'pointer', color: '#ff4d4f' }}
+                    />
                 </div>
             ),
         },
     ];
 
-    const [tableColumns, setTableColumns] = useState(columns)
-    const [dataSource, setDataSource] = useState([])
-
-    useEffect(() => {
-        const dataSource = TraderListData
-        setDataSource(dataSource)
-    }, []);
-
     return (
         <Table
         dataSource={ props.traders }
-        columns={tableColumns}
+        columns={columns}
         pagination={false}
+        rowKey="id"
         />
     );
 }
 
-export default TraderList
+export default TraderList;

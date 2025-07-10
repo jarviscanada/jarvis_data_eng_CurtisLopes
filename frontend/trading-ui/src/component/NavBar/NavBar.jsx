@@ -1,5 +1,5 @@
 import React from 'react'
-import './/NavBar.scss'
+import './NavBar.scss'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAddressBook as dashboardIcon } from '@fortawesome/free-solid-svg-icons';
