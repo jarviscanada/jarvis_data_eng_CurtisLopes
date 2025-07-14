@@ -75,19 +75,38 @@ function Dashboard(props) {
                     onCancel={handleCancel}
                 >
                     <Form form={form} layout="vertical">
-                        <Form.Item label="First Name" name="firstName" rules={[{ required:true }]}>
+                        <Form.Item 
+                            label="First Name" 
+                            name="firstName" 
+                            rules={[{ required:true }]}>
                             <Input placeholder="John" />
                         </Form.Item>
-                        <Form.Item label="Last Name" name="lastName" rules={[{ required:true }]}>
+
+                        <Form.Item 
+                            label="Last Name" 
+                            name="lastName" 
+                            rules={[{ required:true }]}>
                             <Input placeholder="Smith" />
                         </Form.Item>
-                        <Form.Item label="Email" name="email" rules={[{ required:true }]}>
+
+                        <Form.Item 
+                            label="Email" 
+                            name="email" 
+                            rules={[{ required:true }]}>
                             <Input placeholder="johnsmith@email.com" />
                         </Form.Item>
-                        <Form.Item label="Country" name="country" rules={[{ required:true }]}>
+
+                        <Form.Item 
+                            label="Country" 
+                            name="country" 
+                            rules={[{ required:true }]}>
                             <Input placeholder="Country" />
                         </Form.Item>
-                        <Form.Item label="Date of Birth" name="dob" rules={[{ required:true }]}>
+
+                        <Form.Item 
+                            label="Date of Birth" 
+                            name="dob" 
+                            rules={[{ required:true }]}>
                             <DatePicker style={{width:"100%"}} placeholder=""></DatePicker>
                         </Form.Item>
                     </Form>
