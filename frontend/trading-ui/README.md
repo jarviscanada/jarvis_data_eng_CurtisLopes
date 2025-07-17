@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# React Trading App
+## Introduction
+The Trading App is a modern web-based application designed to help users view and manage a stock traders' accounts,
+and to view real-time market quotes. The applications provides an interface where users can add, remove, and view trader profiles, as well as fetch live stock quote information use Alpha Vantage's stock API.
+The app is intended for internal trading teams, or users interested in managing a portfolio of traders while monitoring live market data.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The project follows a component-based architecture using **ReactJS** for the front end, and **Ant Design (antd)** for its UI components. It utilized **npm** for package management and React Router for page navigation. The application is modular and easy to extend for expanded features such as quote customization and purchase handling.
 
-## Available Scripts
+## Quick Start
 
-In the project directory, you can run:
+1. Install Node.js and npm (skip this step if they are already installed)
+2. Clone repository (one cloned, open the folder)
+```
+git clone https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/develop/frontend/trading-ui
+```
+3. Install dependencies
+```
+npm install
+```
+4. Start application
+```
+npm start
+```
+5. Application will open in browser, address http://localhost:3000
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Implementation
+The Trading App is built using functional React component and hooks such as **useState** and **useEffect**, and the UI is prowered by **antd** components for consistency and responsiveness. The core features of the app are divided across components:
+- **NavBar**: Displays the the page's navigation links.
+- **Dashboard**: Displays the trader list and allows users to add traders via a modal form, or delete traders from the list.
+- **QuotePage**: Fetches and displays stock quotes retrieved from Alpha Vantage's Time Series Daily API using Axios.
+- **TraderList**: Renders the list of traders with support for deletion.
+## Architecture
+![Architecture Diagram](./assets/reactArchitecture.png)
+## Test
+The application has been tested manually via browser navigation through the UI, verifying form validation, trader list rendering, quote fetching and modal interaction.
+## Deployment
+The application was version controlled and deployed using GitHub.
+## Improvements
+1. Add functionality for adding and removing stock ticker symbols dynamically on the Quotes Page.
+2. Implement 'Trade History' page for each trader.
+3. Implement 'Account' page for each trader that displays funds available to each trader.
