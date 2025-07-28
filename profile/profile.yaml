@@ -45,6 +45,7 @@ skills:
     - AWS
     - Azure
     - JUnit
+    - Spring Boot
 
 # List of Jarvis projects
 jarvis_projects:
@@ -77,9 +78,12 @@ jarvis_projects:
       customer behaviour. Built an RFM (Recency, Frequency, Monetary) model to segment customers and uncover insights for targeted 
       marketing strategies. Deployed the project via GitHub and Jupyter Notebook to provide the LGS team with accessible analytics,
       allowing them to identify high-value customers, lapsed buyers for potential re-engagement, and improve overall sales performance.
-  #- name: "Hadoop"
-  #  git_url: "/hadoop"
-  #  description: ""
+  - name: "React Trading App"
+    git_url: "/frontend/trading-ui"
+    description: The Trading App is a modern web-based platform for managing trader accounts and viewing real-time stock quotes via the
+      Alpha Vantage API. Designed for internal trading teams or portfolio managers, it supports adding, removing, and viewing trader profiles.
+      Built with a component-based architechture, the app uses ReactJS, Ant Design, React Router, and npm on the front end, with a Spring Boot backend,
+      making it modular, scalable, and easy to extend with features like quote customization and purchase history.
   #- name: "Spark"
   #  git_url: "/spark"
   #  description: ""
