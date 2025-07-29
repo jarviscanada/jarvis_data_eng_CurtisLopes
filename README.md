@@ -8,7 +8,7 @@ Versatile software developer with a strong academic foundation in Computer Scien
 
 **Competent:** C++, C#, C, Docker, REST APIs, GCP, Selenium, Node.js, Pandas/Numpy
 
-**Familiar:** MongoDB, .NET MAUI, React, AWS, Azure, JUnit
+**Familiar:** MongoDB, .NET MAUI, React, AWS, Azure, JUnit, Spring Boot
 
 ## Jarvis Projects
 
@@ -20,6 +20,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_CurtisLope
 **Grep App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/grep_app)]: Developed a Java-based Grep application - a command-line tool that recursively searches files in a directory for lines matching a given regular expression and writes results to an output file. Implemented both traditional (loop-based) and modern (Java Streams & Lambda) approaches. Built with Maven, logged with SL4FJ, and packaged using Docker for easy deployment. The application can be used for log analysis, automated file scanning, or integration into data-processing pipelines for DevOps and system monitoring tasks.
 
 **Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/python_data_anlytics)]: Developed a proof-of-concept analytics project for a UK-based online retailer using Python, PostgreSQL, Docker, and Jupyter Notebook. Leveraged Pandas, Matplotlib, and Seaborn to analyze historical purchase data and visualize customer behaviour. Built an RFM (Recency, Frequency, Monetary) model to segment customers and uncover insights for targeted marketing strategies. Deployed the project via GitHub and Jupyter Notebook to provide the LGS team with accessible analytics, allowing them to identify high-value customers, lapsed buyers for potential re-engagement, and improve overall sales performance.
+
+**React Trading App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_CurtisLopes/tree/master/frontend/trading-ui)]: The Trading App is a modern web-based platform for managing trader accounts and viewing real-time stock quotes via the Alpha Vantage API. Designed for internal trading teams or portfolio managers, it supports adding, removing, and viewing trader profiles. Built with a component-based architechture, the app uses ReactJS, Ant Design, React Router, and npm on the front end, with a Spring Boot backend, making it modular, scalable, and easy to extend with features like quote customization and purchase history.
 
 
 ## Highlighted Projects
