@@ -26,7 +26,8 @@ timestamp=$(date "+%Y-%m-%d %H:%M:%S")
 
 #INSERT statement from specification variables
 insert_statement="INSERT INTO host_info (hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, l2_cache, timestamp, total_mem)
-VALUES ('$hostname', $cpu_number, '$cpu_architecture', '$cpu_model', $cpu_mhz, '$l2_cache', '$timestamp', $total_mem);"
+VALUES ('$hostname', $cpu_number, '$cpu_architecture', '$cpu_model', $cpu_mhz, '$l2_cache', '$timestamp', $total_mem)
+ON CONFLICT (hostname) DO NOTHING;"
 
 #Execute INSERT statement
 export PGPASSWORD=$psql_password

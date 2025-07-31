@@ -2,7 +2,7 @@
 \c host_agent
 
 -- 2. Create `host_info` table if not exist
-CREATE TABLE IF NOT EXIST PUBLIC.host_info
+CREATE TABLE IF NOT EXISTS PUBLIC.host_info
   (
      id               SERIAL NOT NULL,
      hostname         VARCHAR NOT NULL,
@@ -27,7 +27,7 @@ INSERT INTO host_info (id, hostname, cpu_number, cpu_architecture, cpu_model, cp
 SELECT * FROM host_info;
 
 -- 3. Create `host_usage` table if not exist
-CREATE TABLE IF NOT EXIST PUBLIC.host_usage
+CREATE TABLE IF NOT EXISTS PUBLIC.host_usage
   (
      "timestamp"    TIMESTAMP NOT NULL,
      host_id        SERIAL NOT NULL,
