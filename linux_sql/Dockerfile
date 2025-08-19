@@ -2,7 +2,7 @@
 FROM alpine:latest
 
 # Install bash, cron, and PostgreSQL client
-RUN apk add --no-cashe bash cronie postgresql-client
+RUN apk add --no-cache bash cronie postgresql-client
 
 # Set working directory
 WORKDIR /app
