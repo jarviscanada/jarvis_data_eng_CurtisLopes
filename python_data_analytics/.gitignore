@@ -1,0 +1,6 @@
+.cache/
+.config/
+.ipython/
+.jupyter/
+.local/
+.npm/
